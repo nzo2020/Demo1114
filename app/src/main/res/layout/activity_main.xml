@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/a_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter coefficient a"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/b_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_edittext"
+        android:layout_marginTop="16dp"
+        android:hint="Enter coefficient b"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/c_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_edittext"
+        android:layout_marginTop="16dp"
+        android:hint="Enter coefficient c"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/solve_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c_edittext"
+        android:layout_marginTop="16dp"
+        android:text="Solve"
+        android:onClick="solve"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/random_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/solve_button"
+        android:layout_marginTop="16dp"
+        android:text="Generate Random Coefficients"
+        android:onClick="random_numbers"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
