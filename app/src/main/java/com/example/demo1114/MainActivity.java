@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText aEditText, bEditText, cEditText;
     double a = 0, b = 0, c = 0;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
